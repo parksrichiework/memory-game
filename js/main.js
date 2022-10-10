@@ -81,8 +81,7 @@ function checkMatch(){
     if(optionOneId == optionTwoId){
         alert('You clicked the same image!')
     }
-    cardsChosen = []
-    cardsChosenIds= []
+   
 
     console.log('check for match')
     if(cardsChosen[0] == cardsChosen[1]){
