@@ -90,13 +90,13 @@ img:hover{
 }
 
 .services-about a{
-	background-color: var(--lime-green);
-	border: solid 2px var(--lime-green);
+	background-color: none;
+	border: solid 1px var(--celadon-blue);
 	border-radius: 20px;
 	width: fit-content;
 	padding: 10px 20px;
 	text-decoration: none;
-	color: white;
+	color: var(--celadon-blue);
 }
 
 
