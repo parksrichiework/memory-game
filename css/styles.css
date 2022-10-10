@@ -89,7 +89,7 @@ img:hover{
 	margin: 40px 0px;
 }
 
-.services-about a{
+/* .services-about a{
 	background-color: none;
 	border: solid 1px var(--celadon-blue);
 	border-radius: 20px;
@@ -97,11 +97,31 @@ img:hover{
 	padding: 10px 20px;
 	text-decoration: none;
 	color: var(--celadon-blue);
+} */
+
+.services-about a{
+    color: white;
+padding: 10px 20px;
+border-radius: 20pt;
+background: var(--fiery-rose);
+ background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+ background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--celadon-blue)));
+ background: -webkit-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+ background: -o-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+ background: -ms-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+ background: linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+ background-size: 400% 400%;
+ -webkit-animation: errorBg 55s ease infinite;
+ -moz-animation: errorBg 55s ease infinite;
+ animation: errorBg 55s ease infinite;
+ height: 100vh;
+ transition: 0.3s ease-in-out;
+ text-decoration: none;
 }
 
 
 .services-about a:hover{
-	background-color: var(--languid-lavender);
+	background: var(--languid-lavender);
 	border: solid 2px var(--languid-lavender);
     transition: 0.3s ease-in-out;
     color: var(--darker-purple);
