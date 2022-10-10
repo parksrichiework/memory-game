@@ -1,9 +1,26 @@
+
 :root{
-    --
-}
+    --portfolio-purple: #6E53A1;
+    --darker-purple: #382B50;
+    --darker-purple-opacity: hsla(262, 23%, 30%, 0.76);
+    --lighter-purple: #D5BFFF;
+    --languid-lavender: #DCCDE8;
+    --fiery-rose: #f45b69;
+    --fiery-rose-opacity: #f45b68a1;
+    --celadon-blue: #0081A7;
+    --celadon-blue-opacity: #0080a7a7;
+    --gold-crayola: #EFC88B;
+    --lime-green: #6BD425;
+    --dark-sea-green: #7FB285;
+    --mantis: #7DC95E;
+    --atomic-tangerine: #F49D6E;
+    --atomic-tangerine-opacity: #f49d6ea1;
+   }
+   
+
 
 #grid{
-    
+    margin-top: 30px;
     width: 400px;
     height: 300px;
     display:flex;
@@ -17,23 +34,33 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--darker-purple);
+    /* background-color: whitesmoke; */
 }
 
 .score-display{
 
 }
 
+h1{
+    text-align: center;
+    font-family: 'Bakbak One', sans-serif;
+    color: var(--darker-purple)
+}
+
 h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--darker-purple)
 }
 
-h2{
+h4{
     font-size: 16px;
+    color: var(--darker-purple)
 }
 
-img{ 
-    
-    
+a{
+    text-decoration: none;
+    padding
 }
 
 img:hover{
@@ -49,6 +76,47 @@ img:hover{
     flex-wrap: wrap;
     margin-top: 30px;
 }
+.services-about{
+	display: block;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0px;
+	color: var(--palatinate-purple);
+			
+}
+
+.services-about h3{
+	margin: 40px 0px;
+}
+
+.services-about a{
+	background-color: var(--lime-green);
+	border: solid 2px var(--lime-green);
+	border-radius: 20px;
+	width: fit-content;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+}
+
+
+.services-about a:hover{
+	background-color: var(--languid-lavender);
+	border: solid 2px var(--languid-lavender);
+    transition: 0.3s ease-in-out;
+    color: var(--darker-purple);
+    
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 50px 0px 0px;
+}
+
+/* MOBILE STYLES ----------------------------------------------------------------------- */
 
 @media screen and (max-width: 640px) {
 	
@@ -69,6 +137,10 @@ img:hover{
         align-self: center;
     }
 
+    img:hover{
+        opacity: 1;
+       transition: none;
+    }
 	.services-about{
 		display: inline-block;
 		text-align: center;

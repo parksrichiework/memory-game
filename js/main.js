@@ -81,10 +81,12 @@ function checkMatch(){
     if(optionOneId == optionTwoId){
         alert('You clicked the same image!')
     }
+    cardsChosen = []
+    cardsChosenIds= []
 
     console.log('check for match')
     if(cardsChosen[0] == cardsChosen[1]){
-        alert('you got a match!')
+        alert('Yay! You got a match!')
         cards[optionOneId].setAttribute('src', 'img/white.png')
         cards[optionTwoId].setAttribute('src', 'img/white.png')
         cards[optionOneId].removeEventListener('click', flipCard)
@@ -93,10 +95,10 @@ function checkMatch(){
     } else {
         cards[optionOneId].setAttribute('src', 'img/blank.png')
         cards[optionTwoId].setAttribute('src', 'img/blank.png')
-        alert('sorry! try again!')
+        alert('Sorry! Try again!')
     }
 
-    resultDisplay.innerHTML = cardsWon.length // you can also use .text
+    resultDisplay.innerHTML = cardsWon.length // you can also use 
     cardsChosen = []
     cardsChosenIds= []
 
