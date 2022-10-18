@@ -73,6 +73,7 @@ function createBoard (){
 
 createBoard()
 
+//CHECK FOR A MATCH ----------------------------------------
 function checkMatch(){
     const cards = document.querySelectorAll('#grid img')
     let optionOneId = cardsChosenIds[0]
