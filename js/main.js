@@ -1,51 +1,51 @@
 const cardArray = [
     {
-        name: 'fries',
-        img: 'img/fries.png',
+        name: 'ninja',
+        img: 'img/ninja-toy.jpg',
     },
     {
-        name: 'cheeseburger',
-        img: 'img/cheeseburger.png',
+        name: 'bouncy-ball',
+        img: 'img/bouncy-ball.jpg',
     },
     {
-        name: 'hotdog',
-        img: 'img/hotdog.png',
+        name: 'sticky-hand',
+        img: 'img/sticky-hand.jpg',
     },
     {
-        name: 'icecream',
-        img: 'img/ice-cream.png',
+        name: 'ring',
+        img: 'img/ring.jpg',
     },
     {
-        name: 'milkshake',
-        img: 'img/milkshake.png',
+        name: 'capsule',
+        img: 'img/capsule.jpg',
     },
     {
-        name: 'pizza',
-        img: 'img/pizza.png',
+        name: 'dispenser',
+        img: 'img/dispenser.jpg',
     },
     {
-        name: 'fries',
-        img: 'img/fries.png',
+        name: 'ninja',
+        img: 'img/ninja-toy.jpg',
     },
     {
-        name: 'cheeseburger',
-        img: 'img/cheeseburger.png',
+        name: 'bouncy-ball',
+        img: 'img/bouncy-ball.jpg',
     },
     {
-        name: 'hotdog',
-        img: 'img/hotdog.png',
+        name: 'sticky-hand',
+        img: 'img/sticky-hand.jpg',
     },
     {
-        name: 'icecream',
-        img: 'img/ice-cream.png',
+        name: 'ring',
+        img: 'img/ring.jpg',
     },
     {
-        name: 'milkshake',
-        img: 'img/milkshake.png',
+        name: 'capsule',
+        img: 'img/capsule.jpg',
     },
     {
-        name: 'pizza',
-        img: 'img/pizza.png',
+        name: 'dispenser',
+        img: 'img/dispenser.jpg',
     },
 ]
 
@@ -63,7 +63,7 @@ const resultDisplay = document.querySelector('#result')
 function createBoard (){
     for(let i=0; i < cardArray.length; i++){
         const card = document.createElement('img')
-        card.setAttribute('src', 'img/blank.png')
+        card.setAttribute('src', 'img/blank-logo.jpg')
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
         gridDisplay.append(card)
@@ -92,8 +92,8 @@ function checkMatch(){
         cards[optionTwoId].removeEventListener('click', flipCard)
         cardsWon.push(cardsChosen)
     } else {
-        cards[optionOneId].setAttribute('src', 'img/blank.png')
-        cards[optionTwoId].setAttribute('src', 'img/blank.png')
+        cards[optionOneId].setAttribute('src', 'img/blank-logo.jpg')
+        cards[optionTwoId].setAttribute('src', 'img/blank-logo.jpg')
         alert('Sorry! Try again!')
     }
 
