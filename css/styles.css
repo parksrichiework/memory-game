@@ -141,6 +141,47 @@ footer{
 	margin: 50px 0px 0px;
 }
 
+.hide{
+    display: none;
+}
+
+.show{
+    display:flex;
+}
+
+#visual-design-info,
+#design-thinking-info,
+#web-dev-info,
+#illustration-info{
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 300px;
+    background-color: var(--celadon-blue);
+    padding: 10px;
+}
+
+#visual-design-info{
+    background-color: var(--atomic-tangerine);    
+}
+
+#design-thinking-info{
+    background-color: var(--lime-green);    
+}
+
+#web-dev-info{
+      background-color: var(--celadon-blue);    
+}
+
+#illustration-info{
+    background-color: var(--fiery-rose);    
+}
+
+
 /* MOBILE STYLES ----------------------------------------------------------------------- */
 
 @media screen and (max-width: 640px) {
