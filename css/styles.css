@@ -28,6 +28,12 @@
     
 }
 
+/* #grid-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 body{
     width: 100%;
     display: flex;
@@ -36,6 +42,14 @@ body{
     justify-content: center;
     color: var(--darker-purple);
     /* background-color: whitesmoke; */
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .score-display{
@@ -55,7 +69,8 @@ h1{
 
 h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--darker-purple)
+    color: var(--darker-purple);
+    text-align: center;
 }
 
 h4{
@@ -71,6 +86,75 @@ a{
 img:hover{
     opacity: 0.7;
     transition: 0.3s ease-in-out;
+}
+
+/* .hide{
+    display: none;
+} */
+
+.show{
+    display:flex;
+}
+
+.info-box{
+    display: none;
+    z-index: 5;
+    width: 380px;
+    height: 600px;    
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#visual-design-info,
+#design-thinking-info,
+#web-dev-info,
+#illustration-info{
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 300px;
+    background-color: var(--celadon-blue);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.close{
+    margin-top: 30px;
+    background-color: var(--darker-purple);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.close:hover{
+    background-color: var(--lighter-purple);
+    color: var(--darker-purple);
+    border: solid 0px var(--darker-purple);
+    transition: 0.2s ease-in-out;
+}
+
+#visual-design-info{
+    background-color: var(--atomic-tangerine);    
+}
+
+#design-thinking-info{
+    background-color: var(--lime-green);    
+}
+
+#web-dev-info{
+      background-color: var(--celadon-blue);    
+}
+
+#illustration-info{
+    background-color: var(--fiery-rose);    
 }
 
 .services-about{
@@ -125,6 +209,7 @@ background: var(--fiery-rose);
 }
 
 
+
 .services-about a:hover{
 	background: var(--languid-lavender);
 	border: solid 2px var(--languid-lavender);
@@ -132,6 +217,8 @@ background: var(--fiery-rose);
     color: var(--darker-purple);
     
 }
+
+
 
 footer{
 	display: flex;
@@ -141,45 +228,7 @@ footer{
 	margin: 50px 0px 0px;
 }
 
-.hide{
-    display: none;
-}
 
-.show{
-    display:flex;
-}
-
-#visual-design-info,
-#design-thinking-info,
-#web-dev-info,
-#illustration-info{
-    display: none;
-    flex-wrap: wrap;
-    flex-direction: column;
-    z-index: 5;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    width: 300px;
-    background-color: var(--celadon-blue);
-    padding: 10px;
-}
-
-#visual-design-info{
-    background-color: var(--atomic-tangerine);    
-}
-
-#design-thinking-info{
-    background-color: var(--lime-green);    
-}
-
-#web-dev-info{
-      background-color: var(--celadon-blue);    
-}
-
-#illustration-info{
-    background-color: var(--fiery-rose);    
-}
 
 
 /* MOBILE STYLES ----------------------------------------------------------------------- */
@@ -201,6 +250,10 @@ footer{
         display: flex;
         justify-content: center;
         align-self: center;
+    }
+
+    .info-box{
+        width: 380px:
     }
 
     img:hover{

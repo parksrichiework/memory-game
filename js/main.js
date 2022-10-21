@@ -103,24 +103,28 @@ function checkMatch(){
         ){
     console.log('you matched the ninjas')
     document.querySelector('#web-dev-info').style.display= 'flex'
+    document.querySelector('.info-box').style.display= 'flex'
     }
     //show if you match the sticky hands
     if(cardsChosen[0] === 'sticky-hand' && cardsChosen[1] === 'sticky-hand'
     ){
     console.log('you matched the sticky hands')
     document.querySelector('#illustration-info').style.display= 'flex'
+    document.querySelector('.info-box').style.display= 'flex'
     }
     //show if you match the bouncy balls
     if(cardsChosen[0] === 'bouncy-ball' && cardsChosen[1] === 'bouncy-ball'
     ){
     console.log('you matched the bouncy balls')
     document.querySelector('#design-thinking-info').style.display= 'flex'
+    document.querySelector('.info-box').style.display= 'flex'
     }
     //show if you match the rings
     if(cardsChosen[0] === 'ring' && cardsChosen[1] === 'ring'
     ){
     console.log('you matched the rings')
     document.querySelector('#visual-design-info').style.display= 'flex'
+    document.querySelector('.info-box').style.display= 'flex'
     }
 
     resultDisplay.innerHTML = cardsWon.length // you can also use .innerText instead of .innerHTML
@@ -161,6 +165,7 @@ for(i of allCloseButtons){
         for (let i = 0; i <= allInfo.length; i++) {
             if(allInfo[i].style.display= 'flex'){
                 allInfo[i].style.display= 'none'
+                document.querySelector('.info-box').style.display= 'none'
             }            
         }       
         
